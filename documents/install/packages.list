@@ -1,0 +1,12 @@
+apache.tazpkg
+apache-mod-perl.tazpkg
+apache-mod-wsgi.tazpkg
+php.tazpkg
+php-cli.tazpkg
+php-apache.tazpkg
+php-curl.tazpkg
+php-mysql.tazpkg
+php-mysqli.tazpkg
+php-pdo-mysql.tazpkg
+mysql.tazpkg
+mysql-client.tazpkg

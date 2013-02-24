@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/etc/kde/kdm'
+let g:netrw_dirhist_2='/home/cymon/.vim/plugin/vimpanel'
+let g:netrw_dirhist_3='/home/cymon'
+let g:netrw_dirhist_4='/home/cymon/.HotheadGames'
+let g:netrw_dirhist_5='/home/cymon'
+let g:netrw_dirhist_6='/home/cymon/.Eterm'
+let g:netrw_dirhist_7='/home/cymon/.Eterm/themes'
+let g:netrw_dirhist_8='/home/cymon/.vim/plugin/vimpanel'
+let g:netrw_dirhist_9='/home/cymon/.vim/plugin'

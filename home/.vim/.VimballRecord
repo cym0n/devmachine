@@ -1,0 +1,2 @@
+omniperl.vba: call delete('/home/cymon/.vim/ftplugin/perl/omniperl.pl')|call delete('/home/cymon/.vim/ftplugin/perl/omniperl.vim')|call delete('/home/cymon/.vim/doc/omniperl.txt')
+myprojects.vba: call delete('/home/cymon/.vim/plugin/myprojects.vim')|call delete('/home/cymon/.vim/syntax/myprojects.vim')|call delete('/home/cymon/.vim/syntax/myprojectsSvn.vim')

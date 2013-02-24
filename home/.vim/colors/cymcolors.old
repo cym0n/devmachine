@@ -1,0 +1,27 @@
+" local syntax file - set colors on a per-machine basis:
+" vim: tw=0 ts=4 sw=4
+" Vim color file
+" Maintainer:	Ron Aaron <ron@ronware.org>
+" Last Change:	2003 May 02
+
+hi clear
+set background=dark
+if exists("syntax_on")
+  syntax reset
+endif
+let g:colors_name = "cymcolors"
+
+highlight Comment	 ctermfg=8						  guifg=#8B6969
+highlight Constant	 ctermfg=14			   cterm=none guifg=#43D58C				  gui=none
+highlight Identifier ctermfg=6						  guifg=#D41A1F
+highlight Statement  ctermfg=3			   cterm=bold guifg=#c0c000				  gui=none
+highlight PreProc	 ctermfg=10						  guifg=#0276FD
+highlight Type		 ctermfg=2						  guifg=#f0c000				  gui=none
+highlight Special	 ctermfg=12						  guifg=#f000ff
+highlight Error					ctermbg=9							guibg=#ff0000
+highlight Todo		 ctermfg=4	ctermbg=3			  guifg=#000080 guibg=#c0c000
+highlight Directory  ctermfg=2						  guifg=#00c000
+highlight StatusLine ctermfg=11 ctermbg=12 cterm=none guifg=#ffff00 guibg=#0000ff gui=none
+highlight Normal									  guifg=#EECFA1 guibg=#2E2E2E
+highlight Search				ctermbg=3			  guifg=#5DFC0A	guibg=#2E2E2E gui=underline
+

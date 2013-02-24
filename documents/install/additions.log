@@ -1,0 +1,61 @@
+root@zion:/media/cdrom# ./VBoxLinuxAdditions.run 
+Verifying archive integrity... All good.
+Uncompressing VirtualBox 4.1.14 Guest Additions for Linux.........
+VirtualBox Guest Additions installer
+As our installer does not recognize your Linux distribution, we were unable to
+set up the initialization script vboxadd correctly.  The script has been copied
+copied to the /etc/init.d directory.  You should set up your system to start
+it at system start, or start it manually before using VirtualBox.
+
+If you would like to help us add support for your distribution, please open a
+new ticket on http://www.virtualbox.org/wiki/Bugtracker.
+/sbin/modprobe: invalid option -- 'c'
+
+Command line: /sbin/modprobe -c 
+
+BusyBox v1.18.4 (2012-03-14 03:32:25 CET) multi-call binary.
+
+Usage: modprobe [-alrqvsb] MODULE [symbol=value]...
+
+Options:
+	-a	Load multiple MODULEs
+	-l	List (MODULE is a pattern)
+	-r	Remove MODULE (stacks) or do autoclean
+	-q	Quiet
+	-v	Verbose
+	-s	Log to syslog
+	-b	Apply blacklist to module names too
+
+Removing existing VirtualBox DKMS kernel modules ...done.
+Removing existing VirtualBox non-DKMS kernel modules ...done.
+Building the VirtualBox Guest Additions kernel modules
+The headers for the current running kernel were not found. If the following
+module compilation fails then this could be the reason.
+
+Building the main Guest Additions module ...done.
+Building the shared folder support module ...done.
+Building the OpenGL support module ...done.
+Doing non-kernel setup of the Guest Additions ...done.
+Starting the VirtualBox Guest Additions ...done.
+As our installer does not recognize your Linux distribution, we were unable to
+set up the initialization script vboxadd-service correctly.  The script has been copied
+copied to the /etc/init.d directory.  You should set up your system to start
+it at system start, or start it manually before using VirtualBox.
+
+If you would like to help us add support for your distribution, please open a
+new ticket on http://www.virtualbox.org/wiki/Bugtracker.
+As our installer does not recognize your Linux distribution, we were unable to
+set up the initialization script vboxadd-x11 correctly.  The script has been copied
+copied to the /etc/init.d directory.  You should set up your system to start
+it at system start, or start it manually before using VirtualBox.
+
+If you would like to help us add support for your distribution, please open a
+new ticket on http://www.virtualbox.org/wiki/Bugtracker.
+Installing the Window System drivers
+Installing X.Org Server 1.9 modules ...done.
+Setting up the Window System to use the Guest Additions ...done.
+You may need to restart the hal service and the Window System (or just restart
+the guest system) to enable the Guest Additions.
+
+Installing graphics libraries and desktop services components ...done.
+

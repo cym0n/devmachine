@@ -1,0 +1,6 @@
+slitaz-toolchain.tazpkg
+linux-api-headers.tazpkg
+linux-module-headers.tazpkg
+linux-source.tazpkg
+linux-drm.tazpkg
+bzip2.tazpkg
