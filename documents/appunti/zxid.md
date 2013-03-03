@@ -42,3 +42,9 @@ Configurazione Apache
 ---------------------
 
 A questo punto si mette il compilato come una webroot Apache. Questo, per come è configurato l'apache SliTaz, rende già (quasi) operativo php. Per perl e C bisogna configurare il cgi Handler.
+
+
+Note
+----
+
+Per il file PHP meglio sostituire tutti i `<?` con i `<?php`
