@@ -8,7 +8,7 @@ wget $REPO$LIST
 
 for pkg in `cat $LIST`
 do
-    if [ $pkg != $LIST ]; then
-        tazpkg -gi $pkg;
+    if [[ "$pkg" =~ ^php- ]]; then
+        tazpkg -gi $pkg
     fi
 done
