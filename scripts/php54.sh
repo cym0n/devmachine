@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Repo must be added to slitaz first
-REPO=http://pangolin.slitaz.org/downloads/packages/backports/4.0/
+REPO=http://pangolin.slitaz.org/downloads/backports/4.0/
 LIST=packages.list
 
 wget $REPO$LIST
