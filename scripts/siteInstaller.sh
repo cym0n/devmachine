@@ -6,22 +6,22 @@ APACHE_CONF_DIR="/etc/apache/extra/sites"
 APACHE_LOGS_DIR="/var/log/apache"
 APACHE_PORT=7000
 
-PROJECT="tiki"
-PACKAGE="tiki-8.4.tar.gz"
-PACKAGE_ROOT_DIR="tiki-8.4"
+PROJECT="comicpress"
+PACKAGE="wordpress-3.5.1.zip"
+PACKAGE_ROOT_DIR="wordpress"
 
-if [[ $PACKAGE="*gz" ]]
-	then	
-		TAR_COMMAND="xzvf";
-elif [[ $PACKAGE="*bz2" ]]
-	then
-		TAR_COMMAND="xjvf";
+echo "$PACKAGE" | grep -iq "*gz$"
+
+if  echo $PACKAGE | grep -iq gz ; then TAR_COMMAND="tar xzvf";
+elif  echo $PACKAGE | grep -iq bzip ; then TAR_COMMAND="tar xjvf";
+elif  echo $PACKAGE | grep -iq zip ; then TAR_COMMAND="unzip";
 fi
 
 ### APACHE ###
 
 #PACKAGE INSTALLATION
-tar $TAR_COMMAND $SOURCE_DIR/$PACKAGE
+echo "$TAR_COMMAND $SOURCE_DIR/$PACKAGE"
+$TAR_COMMAND $SOURCE_DIR/$PACKAGE
 mv $PACKAGE_ROOT_DIR $SITES_DIR/$PROJECT
 chown -R www:www $SITES_DIR/$PROJECT 
 
