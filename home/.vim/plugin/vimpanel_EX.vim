@@ -14,6 +14,7 @@ function StartVIMPEX(prj)
     set nobuflisted
     nnoremap <F2> :bprevious<CR>
     nnoremap <F3> :bnext<CR>
+    nnoremap <F4> :set nobuflisted<CR>
     nnoremap <buffer> <F2> :wincmd l<CR>
     nnoremap <buffer> <F3> :wincmd l<CR>
 endfunction
