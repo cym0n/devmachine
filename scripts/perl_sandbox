@@ -1,0 +1,4 @@
+libdir=$HOME/works/DjakaWeb/perl5.16
+export PS1='\[\e[1;35m\]\u@\h:\w\$\[\e[0m\] '
+#export DBIC_TRACE=1
+eval $(perl -I$libdir -Mlocal::lib=$libdir)
