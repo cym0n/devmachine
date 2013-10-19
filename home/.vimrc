@@ -30,7 +30,7 @@ endfunction
 
 " From here my setup
 colorscheme cymcolors 
-set guifont=Courier\ 14
+set guifont=Courier\ 12
 map <tab> ^i<tab><esc>
 map \n :tabnew<cr>
 map \q :q!<cr>
