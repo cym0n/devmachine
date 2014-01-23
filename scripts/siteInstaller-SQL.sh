@@ -1,4 +1,6 @@
-PROJECT="testpy"
+PROJECT="agenzie"
+echo "CREATE USER '$PROJECT'@'%' IDENTIFIED BY '$PROJECT'" > query.sql
+mysql -u root < query.sql
 echo "CREATE USER '$PROJECT'@'localhost' IDENTIFIED BY '$PROJECT'" > query.sql
 mysql -u root < query.sql
 echo "CREATE DATABASE $PROJECT" > query.sql
