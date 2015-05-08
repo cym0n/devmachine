@@ -5,6 +5,8 @@
 
 exec 'let g:VimpanelStorage = ' . "'" . expand('$HOME') . '/' . '.vimpanel' . "'"
 function StartVIMPEX(prj)
+    wincmd l
+    only
     silent vertical new
     set columns=20
     wincmd l
