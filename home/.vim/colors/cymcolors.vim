@@ -24,4 +24,6 @@ highlight Directory  ctermfg=2						  guifg=#00c000
 highlight StatusLine ctermfg=11 ctermbg=12 cterm=none guifg=#ffff00 guibg=#0000ff gui=none
 highlight Normal									  guifg=#EECFA1 guibg=#2E2E2E
 highlight Search				ctermbg=3			  guifg=#5DFC0A	guibg=#2E2E2E gui=underline
+highlight htmlH1 guifg=#00ff00 gui=bold
+highlight htmlH2 guifg=#009933 gui=bold
 
