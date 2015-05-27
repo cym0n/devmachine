@@ -10,7 +10,7 @@ function StartVIMPEX(prj)
     silent vertical new
     set columns=20
     wincmd l
-    set columns=70
+    set columns=80
     wincmd h
     execute "VimpanelLoad " . a:prj
     set nobuflisted
@@ -19,4 +19,7 @@ function StartVIMPEX(prj)
     nnoremap <F4> :set nobuflisted<CR>
     nnoremap <buffer> <F2> :wincmd l<CR>
     nnoremap <buffer> <F3> :wincmd l<CR>
+    let l:prjfile = g:VimpanelStorage . "/" . a:prj
+    let l:destfile = g:VimpanelStorage . "/recent"
+    execute "silent !cp " . l:prjfile . " " . l:destfile
 endfunction
