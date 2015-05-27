@@ -36,7 +36,7 @@ map \n :tabnew<cr>
 map \q :q!<cr>
 map \w :w<cr>
 map \e :set wrap!<cr>
-map \j :cal StartVIMPEX('projects')<CR>
+map \j :cal StartVIMPEX('recent')<CR>
 let do_syntax_sel_menu = 1|runtime! synmenu.vim|aunmenu &Syntax.&Show\ filetypes\ in\ menu
 set nobackup
 set noswapfile
@@ -49,5 +49,6 @@ set laststatus=2
 set statusline=%f\ (%{GitBranch()})\ [%l,%c]
 
 call pathogen#infect()
+call guiex#GUI() 
 
 
